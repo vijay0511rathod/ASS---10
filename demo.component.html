@@ -1,0 +1,12 @@
+<h2> Inside Demo component </h2>
+<div>
+    <h1>Arithmetic Operations</h1>
+    <input type="number" #num1 placeholder="Enter first number" />
+    <input type="number" #num2 placeholder="Enter second number" />
+    <button (click)="performAddition(+num1.value, +num2.value)">Add</button>
+    <button (click)="performSubtraction(+num1.value, +num2.value)">Subtract</button>
+    <button (click)="performmultplication(+num1.value, +num2.value)">multplication</button>
+    <button (click)="reset(num1, num2)">Reset</button>
+    <p>Result: {{ result }}</p>
+  </div>
+  
